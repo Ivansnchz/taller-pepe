@@ -101,5 +101,10 @@ span {
     background-color: #e1e1e1;
 }
 
+.buttonHello {
+    width: 5rem;
+    height: 2rem;
+}
+
 /* @media only screen and (max-width: 767px)
  */

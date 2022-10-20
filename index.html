@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Taller Pepe</title>
+	<script type="text/javascript" src="./scripts/hello.js" >sayHello()</script>
+
 </head>
 
 <body>
@@ -12,7 +14,7 @@
 		<!--TODO: divs to sections - Semantic HTML5 (sections, header, etc...) -->
 		<div class="menu">
 			<div class="logo">
-				<li class="nobullets"><a href="./index.html"><img class="logo-img" src="./logo-1-300x138.png"
+				<li class="nobullets"><a href="./index.html"><img class="logo-img" src="./images/logo-1-300x138.png"
 							alt="logo"></a></li>
 			</div>
 			<div class="menuItems">
@@ -22,17 +24,22 @@
 					<li><a href="./index.html"><span class="ini">Recomendamos</span></a></li>
 					<li><a href="./index.html"><span>Contacto</span></a></li>
 					<li><a href="./index.html"><span>Inicio</span></a></li>
+					<input type="text" name="name">  
+					<button class="buttonHello" onclick="sayHello(name)" value="name">Enviar</button>
 				</ul>
 			</div>
 		</div>
 		<div class="main-section">
 			<h1>RECOMENDACIONES PARA COCHES</h1>
-			<p><span class="orangeText">Taller 24 horas Madrid,</span> se enfoca en tu seguridad y tranquilidad a la hora de transitar, encuentra las mejores recomendaciones para coches, alarga la vida de tu vehículo con prácticos consejos y trucos, para que se mantenga constantemente en buen estado</p>
+			<p><span class="orangeText">Taller 24 horas Madrid,</span> se enfoca en tu seguridad y tranquilidad a la
+				hora de transitar, encuentra las mejores recomendaciones para coches, alarga la vida de tu vehículo con
+				prácticos consejos y trucos, para que se mantenga constantemente en buen estado</p>
 			<!-- images -->
 
 		</div>
 
 	</div>
+
 </body>
 
 </html>
