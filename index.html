@@ -5,7 +5,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Taller Pepe</title>
-	<script type="text/javascript" src="./scripts/hello.js" >sayHello()</script>
+	<!-- 	<script type="text/javascript" src="./scripts/hello.js" >sayHello()</script>
+ -->
+	<script src="./scripts/hello.js"></script>
 
 </head>
 
@@ -24,8 +26,13 @@
 					<li><a href="./index.html"><span class="ini">Recomendamos</span></a></li>
 					<li><a href="./index.html"><span>Contacto</span></a></li>
 					<li><a href="./index.html"><span>Inicio</span></a></li>
-					<input type="text" name="name">  
-					<button class="buttonHello" onclick="sayHello(name)" value="name">Enviar</button>
+
+
+					<form>
+
+						<input id="hello" class="hello" alt="name" type="text"></input>
+						<input class="buttonHello" type="submit" value="Enviar" onclick="sayHello()">
+					</form>
 				</ul>
 			</div>
 		</div>

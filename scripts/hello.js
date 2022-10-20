@@ -1,15 +1,9 @@
 // Good old Javascript
-function sayHello (name) {
-    // console.log("Hello");
-    return "Hello, " + name;
+function sayHello () {
+    const form = document.querySelector("form");
+    console.log("Hello, " + form.elements.hello.value);
 } 
 
-/* function sayHello () {
-    console.log("Hello");
-    // return "Hello";
-} */
-
-// Llamaríamos a la función así: console.log(sayHello("Pepe")) / sayHello()
 
 // ES6
 const sayHello2 = () => console.log("Hello") // fat arrow functions
