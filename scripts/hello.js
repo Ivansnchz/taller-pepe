@@ -2,6 +2,7 @@
 function sayHello () {
     const form = document.querySelector("form");
     console.log("Hello, " + form.elements.hello.value);
+    alert("Hello, " + form.elements.hello.value);
 } 
 
 
