@@ -6,13 +6,23 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="./styles/styles.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- NORMAL BOOTSTRAP -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+
+	<!-- MDBOOTSTRAP -->
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+	<!-- MDB -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
 	<title>Taller Pepe</title>
 </head>
 
 <body>
-	<div class="container">
+	<div id="pageContainer">
 		<!--TODO: divs to sections - Semantic HTML5 (sections, header, etc...) -->
 		<div class="menu">
 			<div class="logo">
@@ -32,6 +42,26 @@
 					</form>
 				</ul>
 			</div>
+
+			<nav id="mobileMenu" class="navbar navbar-light bg-light">
+				<div class="container-fluid">
+					<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+						data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+			</nav>
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="bg-light shadow-3 p-4">
+					<button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+					<button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+					<button class="btn btn-link btn-block m-0">Link 3</button>
+				</div>
+			</div>
+
+
+
 		</div>
 		<div class="intro-section">
 			<h1>RECOMENDACIONES PARA COCHES</h1>
@@ -41,7 +71,7 @@
 			<!-- images -->
 
 		</div>
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -66,23 +96,91 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			</a>
+		</div> -->
+
+		<!-- Carousel wrapper -->
+		<div id="carouselBasicExample" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+			<!-- Indicators -->
+			<div class="carousel-indicators">
+				<button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-mdb-target="#carouselBasicExample" data-mdb-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+
+			<!-- Inner -->
+			<div class="carousel-inner">
+				<!-- Single item -->
+				<div class="carousel-item active">
+					<img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(15).webp" class="d-block w-100"
+						alt="Sunset Over the City" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+					</div>
+				</div>
+
+				<!-- Single item -->
+				<div class="carousel-item">
+					<img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp" class="d-block w-100"
+						alt="Canyon at Nigh" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Second slide label</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+
+				<!-- Single item -->
+				<div class="carousel-item">
+					<img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp" class="d-block w-100"
+						alt="Cliff Above a Stormy Sea" />
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Third slide label</h5>
+						<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Inner -->
+
+			<!-- Controls -->
+			<button class="carousel-control-prev" type="button" data-mdb-target="#carouselBasicExample"
+				data-mdb-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-mdb-target="#carouselBasicExample"
+				data-mdb-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- Carousel wrapper -->
+
+
+
+		<div id="servicios">
+			<h1  class="text-center">TALLER 24 HORAS MADRID</h1>
+			<h2>DOMICILIO</h2>
+			<p>Servicios Taller 24 horas Madrid de Mecánica Integral con servicios a domicilio y 24 horas en Madrid,
+				Excelente atención y Excelentes Precios.</p>
+			<h2>EMERGENCIAS</h2>
+			<p>Sabemos lo difícil que significa que tu coche tenga una avería en el momento que menos indicado, por ello
+				tenemos servicio de Emergencias, contáctenos y le ayudaremos.</p>
+			<h2>24/7</h2>
+			<p> Nuestro Servicio 24/7 le permite tener una solución cuando su coche presente averías sea de noche o de
+				día laborable o festivo.</p>
+			<h2>MECÁNICA INTEGRAL</h2>
+			<p>Realizamos reparaciones de Mecánica Integral para todas las marcas, con total garantía, calidad, rapidez
+				y eficacia.</p>
 		</div>
 
-		<div>
-			<h1>TALLER 24 HORAS MADRID</h1>
-			<h2>DOMICILIO</h2>
-			<p>Servicios Taller 24 horas Madrid de Mecánica Integral con servicios a domicilio y 24 horas en Madrid, Excelente atención y Excelentes Precios.</p>
-			<h2>EMERGENCIAS</h2>
-			<p>Sabemos lo difícil que significa que tu coche tenga una avería en el momento que menos indicado, por ello tenemos servicio de Emergencias,  contáctenos y le ayudaremos.</p>
-			<h2>24/7</h2>
-			<p> Nuestro Servicio 24/7  le permite tener una solución cuando su coche presente averías sea de noche o de día laborable o festivo.</p>
-			<h2>MECÁNICA INTEGRAL</h2>
-			<p>Realizamos reparaciones de Mecánica Integral para todas las marcas, con total garantía, calidad, rapidez y eficacia.</p>
-		</div>
-	
 
 	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	<!-- NORMAL BOOTSTRAP -->
+
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
@@ -91,7 +189,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-	<script src="./scripts/hello.js"></script>
+	<script src="./scripts/hello.js"></script> -->
+
+	<!-- MDBOOTSTRAP -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
 </body>
 
 </html>

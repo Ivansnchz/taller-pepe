@@ -1,14 +1,71 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* color paleta
 background-color: #f05a1a;
     color: #f8f8f8; */
 
-.container {
+#pageContainer {
     display: flex;
     flex-direction: column;
     justify-self: center;
     justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
+#servicios {
+    margin: 3rem;
+}
+/* .text-center {
+
+} */
 .menu {
     display: flex;
     flex-direction: row;
@@ -21,15 +78,36 @@ background-color: #f05a1a;
     justify-content: flex-start;
     align-items: flex-end;
 }
+/* mobile */
 
 .menuItems {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-
+    
 
 }
+
+@media only screen and (min-width: 762px){
+    #mobileMenu {
+        display: none;
+
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width: 762px){
+    .menuItems {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+
 
 span {
     color: blue;
@@ -49,9 +127,7 @@ span {
 }
 
 .menu ul li:hover {
-
     border-bottom: 2px solid purple;
-
 }
 
 .menu ul li a {
@@ -65,17 +141,13 @@ span {
 }
 
 .menu ul li a {
-
     text-decoration: none;
     color: rgb(10, 7, 12);
-
 }
 
 .nobullets {
 
     list-style: none;
-
-
 
 }
 
