@@ -208,15 +208,11 @@ background-color: #f05a1a;
 } 
 
 .logo {
-    display: block;
     float: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 
 }
-.menu {
-    display: block;
-    float: right;
-}
-
 
 /* mobile */
 
@@ -239,7 +235,9 @@ background-color: #f05a1a;
     .menuItems {
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-self: baseline;
+        float: right;
+
     }
 }
 
@@ -247,29 +245,29 @@ h1, h2, p, span, footer {
     color: rgb(61, 59, 59);
 }
 
-.menu ul {
+.logoAndMenuItemsContainer ul {
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
-    align-self: flex-end;
+    padding-top: 1rem;
 }
 
-.menu ul li {
+.logoAndMenuItemsContainer ul li {
     margin-right: 2rem;
     list-style: none;
     height: 100%;
 }
 
-.menu ul li:hover {
+.logoAndMenuItemsContainer ul li:hover {
     border-bottom: 2px solid purple;
     margin-bottom: -2px;
 }
 
-.menu ul li a {
+.logoAndMenuItemsContainer ul li a {
     max-height: 88px;
 }
 
-.menu ul li a {
+.logoAndMenuItemsContainer ul li a {
     text-decoration: none;
     color: rgb(10, 7, 12);
 }
@@ -278,7 +276,7 @@ h1, h2, p, span, footer {
     list-style: none;
 }
 
-.menu ul li a:hover {
+.logoAndMenuItemsContainer ul li a:hover {
 
     text-decoration: none;
     color: rgb(131, 71, 172);
