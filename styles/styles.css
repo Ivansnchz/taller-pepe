@@ -209,7 +209,7 @@ background-color: #f05a1a;
 
 .logo {
     float: left;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
 
 }
@@ -249,7 +249,7 @@ h1, h2, p, span, footer {
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .logoAndMenuItemsContainer ul li {
