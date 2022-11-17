@@ -201,15 +201,22 @@ background-color: #f05a1a;
 /* .text-center {
 
 } */
+
+.logoAndMenuItemsContainer{
+    display: block;
+    
+} 
+
+.logo {
+    display: block;
+    float: left;
+
+}
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
+    display: block;
+    float: right;
 }
 
-.menu .logo {
-    display: flex;
-}
 
 /* mobile */
 
@@ -236,7 +243,7 @@ background-color: #f05a1a;
     }
 }
 
-span {
+h1, h2, p, span, footer {
     color: rgb(61, 59, 59);
 }
 
