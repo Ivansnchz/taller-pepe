@@ -23,7 +23,6 @@
 
 <body>
 	<div id="pageContainer">
-		<!--TODO: divs to sections - Semantic HTML5 (sections, header, etc...) -->
 		<header>
 			<div class="menu">
 				<div class="logo">
@@ -32,12 +31,12 @@
 				</div>
 				<div class="menuItems">
 					<ul>
-						<li><a href="./index.html"><span class="orange">Inicio</span></a></li>
-						<li><a href="./index.html"><span>Servicios24</span></a></li>
-						<li><a href="./index.html"><span class="ini">Recomendamos</span></a></li>
-						<li><a href="./index.html"><span>Contacto</span></a></li>
-						<li><a href="./index.html"><span>Inicio</span></a></li>
-						<!-- <form>
+						<li><a href="./"><span class="orange">Inicio</span></a></li>
+						<li><a href="./servicios"><span>Servicios24</span></a></li>
+						<li><a href="./recomendamos"><span class="ini">Recomendamos</span></a></li>
+						<li><a href="./contacto"><span>Contacto</span></a></li>
+						<!-- 
+						<form>
 							<input id="hello" class="hello" alt="name" type="text"></input>
 							<button class="buttonHello" onclick="sayHello()">Enviar</button>
 						</form> -->
@@ -52,14 +51,16 @@
 							<i class="fas fa-bars"></i>
 						</button>
 					</div>
-				</nav>
-				<div class="collapse" id="navbarToggleExternalContent">
-					<div class="bg-light shadow-3 p-4">
-						<button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-						<button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-						<button class="btn btn-link btn-block m-0">Link 3</button>
+
+					<div class="collapse" id="navbarToggleExternalContent">
+						<div class="bg-light shadow-3 p-4">
+							<button class="btn btn-link btn-block border-bottom m-0"><a href="./"><span class="orange">Inicio</span></a></button>
+							<button class="btn btn-link btn-block border-bottom m-0"><a href="./servicios"><span>Servicios24</span></a></button>
+							<button class="btn btn-link btn-block m-0"><a href="./recomendamos"><span class="ini">Recomendamos</span></button>
+								<button class="btn btn-link btn-block m-0"><a href="./contacto"><span class="ini">Contacto</span></button>
+						</div>
 					</div>
-				</div>
+				</nav>
 
 
 
