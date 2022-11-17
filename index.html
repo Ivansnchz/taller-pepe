@@ -24,49 +24,52 @@
 <body>
 	<div id="pageContainer">
 		<!--TODO: divs to sections - Semantic HTML5 (sections, header, etc...) -->
-		<div class="menu">
-			<div class="logo">
-				<li class="nobullets"><a href="./index.html"><img class="logo-img" src="./images/logo-1-300x138.png"
-							alt="logo"></a></li>
-			</div>
-			<div class="menuItems">
-				<ul>
-					<li><a href="./index.html"><span class="orange">Inicio</span></a></li>
-					<li><a href="./index.html"><span>Servicios24</span></a></li>
-					<li><a href="./index.html"><span class="ini">Recomendamos</span></a></li>
-					<li><a href="./index.html"><span>Contacto</span></a></li>
-					<li><a href="./index.html"><span>Inicio</span></a></li>
-					<form>
-						<input id="hello" class="hello" alt="name" type="text"></input>
-						<button class="buttonHello" onclick="sayHello()">Enviar</button>
-					</form>
-				</ul>
-			</div>
-
-			<nav id="mobileMenu" class="navbar navbar-light bg-light">
-				<div class="container-fluid">
-					<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-						data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<i class="fas fa-bars"></i>
-					</button>
+		<header>
+			<div class="menu">
+				<div class="logo">
+					<li class="nobullets"><a href="./index.html"><img class="logo-img" src="./images/logo-1-300x138.png"
+								alt="logo"></a></li>
 				</div>
-			</nav>
-			<div class="collapse" id="navbarToggleExternalContent">
-				<div class="bg-light shadow-3 p-4">
-					<button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-					<button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
-					<button class="btn btn-link btn-block m-0">Link 3</button>
+				<div class="menuItems">
+					<ul>
+						<li><a href="./index.html"><span class="orange">Inicio</span></a></li>
+						<li><a href="./index.html"><span>Servicios24</span></a></li>
+						<li><a href="./index.html"><span class="ini">Recomendamos</span></a></li>
+						<li><a href="./index.html"><span>Contacto</span></a></li>
+						<li><a href="./index.html"><span>Inicio</span></a></li>
+						<!-- <form>
+							<input id="hello" class="hello" alt="name" type="text"></input>
+							<button class="buttonHello" onclick="sayHello()">Enviar</button>
+						</form> -->
+					</ul>
 				</div>
+
+				<nav id="mobileMenu" class="navbar navbar-light bg-light">
+					<div class="container-fluid">
+						<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+							data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fas fa-bars"></i>
+						</button>
+					</div>
+				</nav>
+				<div class="collapse" id="navbarToggleExternalContent">
+					<div class="bg-light shadow-3 p-4">
+						<button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+						<button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+						<button class="btn btn-link btn-block m-0">Link 3</button>
+					</div>
+				</div>
+
+
+
 			</div>
-
-
-
-		</div>
+		</header>
 		<aside class="intro-section">
-			<h1>RECOMENDACIONES PARA COCHES</h1>
+			<h2>RECOMENDACIONES PARA COCHES</h2>
 			<p><span class="orangeText">Taller 24 horas Madrid,</span> se enfoca en tu seguridad y tranquilidad a la
-				hora de transitar, encuentra las mejores recomendaciones para coches, alarga la vida de tu vehículo con
+				hora de transitar, encuentra las mejores recomendaciones para coches, alarga la vida de tu vehículo
+				con
 				prácticos consejos y trucos, para que se mantenga constantemente en buen estado</p>
 			<!-- images -->
 
@@ -134,9 +137,7 @@
 
 		<main id="servicios">
 			<article>
-				<header>
-					<h1 class="text-center">TALLER 24 HORAS MADRID</h1>
-				</header>
+				<h1 class="text-center">TALLER 24 HORAS MADRID</h1>
 				<h2>DOMICILIO</h2>
 				<p><span class="orangeText">Servicios Taller 24 horas Madrid</span> de Mecánica Integral con <span
 						class="orangeText">servicios a domicilio</span> y 24 horas en Madrid,
@@ -159,14 +160,14 @@
 		</main>
 
 
+		<footer class="footer">Copyright 2020</footer>
 	</div>
 
 	<!-- old footer
 		<div class="footer">Copyright 2020</div> 
 	-->
 
-	<!-- New footer (html5 semantico) -->at
-	<footer class="footer">Copyright 2020</footer>
+	<!-- New footer (html5 semantico) -->
 	<!-- NORMAL BOOTSTRAP -->
 
 	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
