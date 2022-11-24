@@ -2,9 +2,9 @@
   "name": "taller-pepe",
   "version": "1.0.0",
   "description": "Esta es una web que estoy haciendo para aprender html y css",
-  "main": "public/index.html",
+  "main": "index.html",
   "scripts": {
-    "sass": "sass src/scss:public/styles"
+    "sass": "sass styles/scss:styles"
   },
   "repository": {
     "type": "git",
