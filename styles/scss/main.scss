@@ -1,5 +1,6 @@
 @import '_reset';
 @import '_base';
+@import '_mixins';
 
 div#pageContainer {
     display: flex;
@@ -9,6 +10,7 @@ div#pageContainer {
     margin: 0;
     padding: 0;
 
+    // our page header
     header.logoAndMenuItemsContainer {
         display: block;
 
@@ -99,7 +101,8 @@ div#pageContainer {
 
 
     }
-
+    
+    // introduction section
     aside.intro-section {
         display: flex;
         flex-direction: column;
@@ -121,20 +124,14 @@ div#pageContainer {
 
     }
 
-
+ 
+    // seccion que muestro los servicios del taller    
     main#servicios {
-
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        justify-content: center;
+        @include centrado;
         margin: 0;
 
         article {
-            display: flex;
-            flex-direction: column;
-            justify-self: center;
-            justify-content: center;
+            @include centrado;
             padding: 3rem;
         }
 
